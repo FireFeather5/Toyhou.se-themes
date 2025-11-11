@@ -16,6 +16,17 @@ Thème de profil contenant :
 * une partie contenant des liens vers différents sites
 * une partie présentation des caractères principaux
 
+### Thème de personnage Dark-Blue
+
+<!-- image(s) -->
+
+Thème de profil contenant :
+* une image
+* une partie description du personnage (caractéristiques)
+* une partie histoire (présentation, backstory)
+* une partie relations
+* une partie couleur
+
 ## Technologies utilisées
 
 **Langages :** HTML, CSS dans des balises `styles`
