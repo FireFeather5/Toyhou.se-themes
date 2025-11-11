@@ -20,7 +20,7 @@ Thème de profil contenant :
 
 <!-- image(s) -->
 
-Thème de profil contenant :
+Thème de personnage contenant :
 * une image
 * une partie description du personnage (caractéristiques)
 * une partie histoire (présentation, backstory)
