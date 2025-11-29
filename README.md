@@ -8,8 +8,6 @@ Thèmes créés pour le site [Toyhou.se](https://toyhou.se/), utilisables et mod
 
 ### Thème de profil Dark-Blue
 
-<!-- image(s) -->
-
 Thème de profil contenant :
 * une image
 * une partie description de l'utilisateur
@@ -17,8 +15,6 @@ Thème de profil contenant :
 * une partie présentation des caractères principaux
 
 ### Thème de personnage Dark-Blue
-
-<!-- image(s) -->
 
 Thème de personnage contenant :
 * une image
@@ -55,4 +51,4 @@ Copier-coller le code dans Toyhou.se à l'endroit souhaité.
 
 ## Modification
 
-Les thèmes peuvent être modifiés (couleurs, disposition, ...); Mais les crédits ne doivent pas être retirés.
+Les thèmes peuvent être modifiés (couleurs, disposition, ...). Mais les crédits ne doivent pas être retirés.
