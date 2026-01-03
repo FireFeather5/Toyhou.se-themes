@@ -10,141 +10,246 @@
     <head>
         <meta charset="utf-8" />
     </head>
+    <body>
+        <!-- Remove before putting into Toyhouse (only for web browser visualisation) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <body style = "margin: 0;">
+        <!-- start here for copy paste into Toyhouse -->
+        <div class="p-2" style="--accent: #02c0b3; --accent2: #025e58; --text: #ffffff; --background: #151219; font-family: 'Courier New', monospace; color: var(--text); background: var(--background); border: double 3px var(--accent);">
 
-        <!-- Replace the colors here to update everywhere -->
-        <div style="--accent: #02a498; --text: #ffffff; font-family: 'Courier New', monospace; color: var(--text); background: #151219; padding: 20px;">
-
-            <div style="font-size: 2.5rem; color: var(--accent); border-bottom: solid 3px var(--accent); margin-bottom: 20px;">
-                username
+            <div style="color: var(--accent); border-bottom: solid 3px var(--accent); font-size: 2.5rem;">
+                Name
             </div>
 
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <div class="w-100">
+                <div class="row no-gutters">
 
-                <!-- Image -->
-                <div style="flex: 1 1 300px; max-width: 350px;">
-                    <img src="URLHERE" style="width: 100%; border: solid 2px var(--accent);" />
-                </div>
+                    <!-- image -->
+                    <div class="col-md-auto mx-auto mt-3">
+                        <!-- Mobile -->
+                        <img
+                            src="LINK_TO_IMAGE_HERE"
+                            class="img-fluid w-100 d-block d-md-none"
+                            style="max-height: 200px; object-fit:cover; object-position: 0% 15%; border: double 3px var(--accent);"
+                        />
 
-                <!-- Description -->
-                <div style="flex: 3 1 500px; border-left: solid 2px var(--accent); border-right: solid 2px var(--accent); padding: 20px; margin: 0 20px;">
-
-                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; border-bottom: solid 2px var(--accent); padding-bottom: 15px;">
-
-                        <div style="flex: 1; min-width: 120px; margin-right: 10px;">
-                            <div style="color: var(--accent); font-weight: bold; text-align: center; font-size: 2rem;">NAME</div>
-                            <div style="text-align: center; font-size: 1.5rem;">.....</div>
-                        </div>
-
-                        <div style="flex: 1; min-width: 120px;">
-                            <div style="color: var(--accent); font-weight: bold; text-align: center; font-size: 2rem;">PRONOUNS</div>
-                            <div style="text-align: center; font-size: 1.5rem;">.....</div>
-                        </div>
-
+                        <!-- Desktop -->
+                        <img
+                            src="LINK_TO_IMAGE_HERE"
+                            class="img-fluid w-100 d-none d-md-block"
+                            style="max-width: 350px; border: double 3px var(--accent);"
+                        />
                     </div>
 
-                    <div style="margin: 20px 0; border-bottom: solid 2px var(--accent); padding-bottom: 15px;">
-                        Put your bio here
-                    </div>
-
-                    <div>
-                        <div style="color: var(--accent); font-weight: bold; text-align: center; font-size: 2rem;">COMMISSIONS</div>
-
-                        <div style="display: flex; flex-wrap: wrap; margin-top: 15px;">
-                            <div style="flex: 1; min-width: 200px; margin-right: 20px;">
-                                <div style="display: flex; justify-content: space-between; margin: 5px 0;"><div style="color: var(--accent); font-weight: bold; font-size: 1.2rem;">COMMISSIONS</div><div>OPEN</div></div>
-                                <div style="display: flex; justify-content: space-between; margin: 5px 0;"><div style="color: var(--accent); font-weight: bold; font-size: 1.2rem;">REQUESTS</div><div>OPEN</div></div>
-                                <div style="display: flex; justify-content: space-between; margin: 5px 0;"><div style="color: var(--accent); font-weight: bold; font-size: 1.2rem;">TRADES</div><div>OPEN</div></div>
+                    <!-- description -->
+                    <div class="col p-2 ml-sm-2 mr-md-2 mt-2 mt-md-3" style="border: double 3px var(--accent);">
+                        
+                        <!-- name/pronouns -->
+                        <div class="row no-gutters pb-3" style="border-bottom: solid 1px var(--accent);">
+                            <div class="col mr-1">
+                                <div class="h3 text-center font-weight-bold m-0" style="color: var(--accent);">NAME</div>
+                                <div class="h4 text-center m-0">HERE</div>
                             </div>
 
-                            <div style="flex: 1; min-width: 200px; text-align: center; display: flex; flex-direction: column; align-items: center;">
-                                <div style="background: var(--accent); margin: 10px 0; width: 50%;">
-                                    <a href="URLHERE" style="color: var(--text); text-decoration: none;">COMMS INFO</a>
+                            <div class="col ml-1">
+                                <div class="h3 text-center font-weight-bold m-0" style="color: var(--accent);">PRONOUNS</div>
+                                <div class="h4 text-center m-0">HERE</div>
+                            </div>
+                        </div>
+
+                        <!-- Song (keep the /embed/ and he ?controls=0 of the link) -->
+                        <div class="d-flex flex-column align-items-center p-1" style="border-bottom: solid 1px var(--accent);">
+                            <span class="p-1" style="border: double 3px var(--accent);">
+                                <iframe frameborder="0" style="height:1rem; width:1rem; opacity:.001; position:absolute;" src="https://www.youtube.com/embed/7Fncun4ObQk?controls=0"></iframe>
+                                <i class="fas fa-play-pause mr-1"></i><b> Song title</b> - Artist(s)
+                            </span>
+                        </div>
+
+                        <!-- description -->
+                        <div class="mt-3 mb-3 pb-3" style="border-bottom: solid 1px var(--accent);">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Mi ipsum faucibus vitae aliquet nec ullamcorper. Netus et malesuada fames ac turpis egestas integer eget. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Neque gravida in fermentum et. At tempor commodo ullamcorper a lacus vestibulum.
+                        </div>
+
+                        <!-- commissions -->
+                        <div style="border-bottom: solid 1px var(--accent);">
+                            <div class="h3 text-center font-weight-bold m-0 mb-3" style="color: var(--accent);">COMMISSIONS</div>
+
+                            <div class="row no-gutters m-2">
+                                <div class="col p-0 pr-1">
+                                    <div class="row no-gutters m-1"><div class="col h4 font-weight-bold m-0">COMMISSIONS</div><div class="col text-right align-self-center">OPEN</div></div>
+                                    <div class="row no-gutters m-1"><div class="col h4 font-weight-bold m-0">REQUESTS</div><div class="col text-right align-self-center">CLOSED</div></div>
+                                    <div class="row no-gutters m-1"><div class="col h4 font-weight-bold m-0">TRADES</div><div class="col text-right align-self-center">CLOSED</div></div>
                                 </div>
 
-                                <div style="background: var(--accent); margin: 10px 0; width: 50%;">
-                                    <a href="URLHERE" style="color: var(--text); text-decoration: none;">T.O.S</a>
+                                <div class="col align-self-center d-flex flex-column align-items-center p-0 pl-1">
+                                    <a class="btn btn-block w-70 p-0 m-1" href="LINK_HERE" role="button" style="background-color: var(--accent2); color: var(--text); text-decoration: none;">COMMS INFO</a>
+                                    <a class="btn btn-block w-70 p-0 m-1" href="LINK_HERE" role="button" style="background-color: var(--accent2); color: var(--text); text-decoration: none;">T.O.S</a>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- interests -->
+                        <div class="mt-3">
+                            <div class="h3 text-center font-weight-bold m-0 mb-3" style="color: var(--accent);">INTERESTS</div>
+
+                            <div id="accordion">
+                                <div class="card" style="background-color: var(--accent2);">
+                                    <div class="card-header p-0" id="i1">
+                                        <h5 class="mb-0">
+                                            <a class="btn btn-block p-1" data-toggle="collapse" href="#colI1" role="button" aria-expanded="false" aria-controls="colI1" style="color: var(--text); text-decoration: none;">
+                                                interest 1
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="colI1" class="collapse" aria-labelledby="i1" data-parent="#accordion">
+                                        <div class="card-body p-0" style="background-color: var(--background);">
+                                            <div class="row no-gutters">
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                                <!-- Force next columns to break to new line -->
+                                                <div class="w-100"></div>
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" style="background-color: var(--accent2);">
+                                    <div class="card-header p-0" id="i2">
+                                        <h5 class="mb-0">
+                                            <a class="btn btn-block p-1" data-toggle="collapse" href="#colI2" role="button" aria-expanded="false" aria-controls="colI2" style="color: var(--text); text-decoration: none;">
+                                                interest 2
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="colI2" class="collapse" aria-labelledby="i2" data-parent="#accordion">
+                                        <div class="card-body p-0" style="background-color: var(--background);">
+                                            <div class="row no-gutters">
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                                <!-- Force next columns to break to new line -->
+                                                <div class="w-100"></div>
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" style="background-color: var(--accent2);">
+                                    <div class="card-header p-0" id="i3">
+                                        <h5 class="mb-0">
+                                            <a class="btn btn-block p-1" data-toggle="collapse" href="#colI3" role="button" aria-expanded="false" aria-controls="colI3" style="color: var(--text); text-decoration: none;">
+                                                interest 3
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="colI3" class="collapse" aria-labelledby="i3" data-parent="#accordion">
+                                        <div class="card-body p-0" style="background-color: var(--background);">
+                                            <div class="row no-gutters">
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                                <!-- Force next columns to break to new line -->
+                                                <div class="w-100"></div>
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                                <div class="col p-1" style="border: double 3px var(--accent);">Lorem ipsum dolor sit amet</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
 
-                <!-- Links -->
-                <div style="flex: 1 1 200px; margin-top: 20px;">
-
-                    <div style="color: var(--accent); font-weight: bold; text-align: center; font-size: 2rem;">LINKS</div>
-
-                    <div style="display: flex; flex-direction: column; align-items: center; min-width: 300px;">
-                        <div style="background: var(--accent); text-align: center; margin: 10px 0; width: 50%;">
-                            <a href="URLHERE" style="color: var(--text); text-decoration: none; font-size: 1.2rem;">INSTAGRAM</a>
-                        </div>
-
-                        <div style="background: var(--accent); text-align: center; margin: 10px 0; width: 50%;">
-                            <a href="URLHERE" style="color: var(--text); text-decoration: none; font-size: 1.2rem;">DEVIANTART</a>
-                        </div>
-
-                        <div style="background: var(--accent); text-align: center; margin: 10px 0; width: 50%;">
-                            <a href="URLHERE" style="color: var(--text); text-decoration: none; font-size: 1.2rem;">ARTFIGHT</a>
-                        </div>
-
-                        <!-- Do not remove this one -->
-                        <div style="background: var(--accent); text-align: center; margin: 10px 0; width: 50%;">
-                            <a href="https://toyhou.se/Fire_feather5" style="color: var(--text); text-decoration: none; font-size: 1.2rem;">CODE BY</a>
+                    <!-- links -->
+                    <div class="col-md-2 p-2 mt-2 mt-md-3" style="border: double 3px var(--accent);">
+                        <div class="h3 text-center font-weight-bold m-0 p-0 mb-3" style="color: var(--accent);">LINKS</div>
+                        
+                        <div class="col align-self-center d-flex flex-column align-items-center p-0">
+                            <a class="btn btn-block w-60 p-0 m-1" href="LINK_HERE" role="button" style="background-color: var(--accent2); color: var(--text); text-decoration: none;">LINK</a>
+                            <a class="btn btn-block w-60 p-0 m-1" href="LINK_HERE" role="button" style="background-color: var(--accent2); color: var(--text); text-decoration: none;">LINK</a>
+                            <a class="btn btn-block w-60 p-0 m-1" href="LINK_HERE" role="button" style="background-color: var(--accent2); color: var(--text); text-decoration: none;">LINK</a>
+                            <a class="btn btn-block w-60 p-0 m-1" href="LINK_HERE" role="button" style="background-color: var(--accent2); color: var(--text); text-decoration: none;">LINK</a>
+                            <a class="btn btn-block w-60 p-0 m-1" href="LINK_HERE" role="button" style="background-color: var(--accent2); color: var(--text); text-decoration: none;">LINK</a>
+                            <!-- Do not remove -->
+                            <a class="btn btn-block w-60 p-0 m-1" href="https://toyhou.se/Fire_feather5" role="button" style="background-color: var(--accent2); color: var(--text); text-decoration: none;">CODE BY</a>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Characters -->
-            <div style="margin-top: 15px; padding-top: 20px; border-top: solid 3px var(--accent); color: var(--accent); font-weight: bold; text-align: center; font-size: 2rem;">CHARACTERS</div>
+            <div class="mt-2 p-2" style="border: double 3px var(--accent);">
+                <div class="h3 text-center font-weight-bold m-0 mb-3" style="color: var(--accent);">CHARACTERS</div>
 
-            <div style="max-width: 770px; overflow: auto; display: flex; flex-direction: row; padding: 10px; margin: auto;">
+                <div class="p-2" style="max-width: 660px; overflow: auto; display: flex; flex-direction: row; margin: auto; border: double 3px var(--accent);">
 
-                <div style="margin: 15px;">
-                    <a href="URLHERE" style="display: block; height: 100px; width: 100px;
-                        background: url(IMAGEURLHERE);
-                        background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
-                    <p style="text-align: center;"> NAME </p>
-                </div>
+                    <div class="mr-2">
+                        <a href="LINK_HERE" style="display: block; height: 100px; width: 100px;
+                            background: url(LINK_TO_IMAGE_HERE);
+                            background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
+                        <p class="text-center m-0"> Name </p>
+                    </div>
 
-                <div style="margin: 15px;">
-                    <a href="URLHERE" style="display: block; height: 100px; width: 100px;
-                        background: url(IMAGEURLHERE);
-                        background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
-                    <p style="text-align: center;"> NAME </p>
-                </div>
+                    <div class="mr-2">
+                        <a href="LINK_HERE" style="display: block; height: 100px; width: 100px;
+                            background: url(LINK_TO_IMAGE_HERE);
+                            background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
+                        <p class="text-center m-0"> Name </p>
+                    </div>
 
-                <div style="margin: 15px;">
-                    <a href="URLHERE" style="display: block; height: 100px; width: 100px;
-                        background: url(IMAGEURLHERE);
-                        background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
-                    <p style="text-align: center;"> NAME </p>
-                </div>
+                    <div class="mr-2">
+                        <a href="LINK_HERE" style="display: block; height: 100px; width: 100px;
+                            background: url(LINK_TO_IMAGE_HERE);
+                            background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
+                        <p class="text-center m-0"> Name </p>
+                    </div>
 
-                <div style="margin: 15px;">
-                    <a href="URLHERE" style="display: block; height: 100px; width: 100px;
-                        background: url(IMAGEURLHERE);
-                        background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
-                    <p style="text-align: center;"> NAME </p>
-                </div>
+                    <div class="mr-2">
+                        <a href="LINK_HERE" style="display: block; height: 100px; width: 100px;
+                            background: url(LINK_TO_IMAGE_HERE);
+                            background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
+                        <p class="text-center m-0"> Name </p>
+                    </div>
 
-                <div style="margin: 15px;">
-                    <a href="URLHERE" style="display: block; height: 100px; width: 100px;
-                        background: url(IMAGEURLHERE);
-                        background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
-                    <p style="text-align: center;"> NAME </p>
-                </div>
+                    <div class="mr-2">
+                        <a href="LINK_HERE" style="display: block; height: 100px; width: 100px;
+                            background: url(LINK_TO_IMAGE_HERE);
+                            background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
+                        <p class="text-center m-0"> Name </p>
+                    </div>
 
-                <div style="margin: 15px;">
-                    <a href="URLHERE" style="display: block; height: 100px; width: 100px;
-                        background: url(IMAGEURLHERE);
-                        background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
-                    <p style="text-align: center;"> NAME </p>
+                    <div class="mr-2">
+                        <a href="LINK_HERE" style="display: block; height: 100px; width: 100px;
+                            background: url(LINK_TO_IMAGE_HERE);
+                            background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
+                        <p class="text-center m-0"> Name </p>
+                    </div>
+
+                    <div class="mr-2">
+                        <a href="LINK_HERE" style="display: block; height: 100px; width: 100px;
+                            background: url(LINK_TO_IMAGE_HERE);
+                            background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
+                        <p class="text-center m-0"> Name </p>
+                    </div>
+
+                    <div class="mr-2">
+                        <a href="LINK_HERE" style="display: block; height: 100px; width: 100px;
+                            background: url(LINK_TO_IMAGE_HERE);
+                            background-size: cover; background-position: center; border: solid 1px var(--accent);"></a>
+                        <p class="text-center m-0"> Name </p>
+                    </div>
+
                 </div>
             </div>
-        </div>
 
+        </div>
+        <!-- Remove before putting into Toyhouse (only for web browser visualisation) -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
